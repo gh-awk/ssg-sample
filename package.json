@@ -1,0 +1,24 @@
+{
+  "name": "ssg",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && vite build --ssr && node scripts/generate.js",
+    "preview": "vite preview --outDir dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@solidjs/router": "^0.15.3",
+    "solid-js": "^1.9.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-typescript": "^7.23.3",
+    "vite": "^6.2.1",
+    "vite-plugin-solid": "^2.10.1"
+  }
+}
